@@ -8,6 +8,7 @@
 |---|---|
 | `index.html` | LP本体。CSS・計測・フォーム送信のJSをすべて内包 |
 | `og-image.jpg` | OGP/Twitter カード用画像（1200×630）。`<meta property="og:image">` から絶対URLで参照 |
+| `profile.jpg` | 自己紹介の写真（720×720）。元の高解像度 jpg はリポジトリに入れない（.gitignore 済み） |
 | `CNAME` | GitHub Pages に独自ドメインを教えるファイル。中身は `rental-shacho.jp` の1行 |
 | `Code.gs` | フォームの受け口（Google Apps Script）。**リポジトリには置かず**、スプレッドシート側の Apps Script に貼る |
 

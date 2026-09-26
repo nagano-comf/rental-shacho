@@ -154,6 +154,7 @@ p{margin:0}
 /* who lends */
 .person .wrap{display:flex;gap:64px;align-items:flex-start}
 .person .head{flex-shrink:0;width:280px}
+.person .photo{display:block;width:100%;max-width:280px;height:auto;aspect-ratio:1/1;object-fit:cover;margin-top:28px;border-radius:6px;border:1px solid var(--line)}
 .person .body{flex:1;display:flex;flex-direction:column;gap:20px}
 .person .name{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
 .person .name b{font-family:var(--serif);font-size:28px;font-weight:800}
@@ -192,6 +193,7 @@ footer .privacy{font-size:12px;line-height:1.8;color:var(--mute);max-width:720px
   .report .wrap,.contact .wrap,.person .wrap{flex-direction:column;align-items:stretch}
   .sheet,form{width:100%}
   .person .head{width:auto}
+  .person .photo{max-width:200px;margin-top:20px}
 }
 @media (max-width:720px){
   .section{padding:64px 0}
@@ -370,7 +372,7 @@ footer .privacy{font-size:12px;line-height:1.8;color:var(--mute);max-width:720px
 
 <section class="section person" data-section="person">
   <div class="wrap">
-    <div class="head"><span class="eyebrow">WHO LENDS</span><h2>貸すのは、<br>この人です</h2></div>
+    <div class="head"><span class="eyebrow">WHO LENDS</span><h2>貸すのは、<br>この人です</h2><img class="photo" src="profile.jpg" alt="長野 俊和" width="720" height="720" loading="lazy" decoding="async"></div>
     <div class="body">
       <div class="name"><b>長野 俊和</b><span>株式会社コンフォータブルノイズ 代表取締役</span></div>
       <p>エンジニアとして約20年、PM／PMOとして約7年。複数の会社に同時に入り、それぞれの経営判断のそばで仕事をしてきました。自分の会社も、一人で経営しています。</p>
