@@ -1,0 +1,503 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>レンタル社長｜社長の頭だけ、貸します。名義は貸しません。</title>
+<meta name="description" content="その会社にいない「社長役の頭」を月額で外付けするサービス。貸すのは判断と視点。登記も肩書も名刺も貸しません。月額5万円〜（税別）、リモート、役割契約。">
+<link rel="canonical" href="https://rental-shacho.jp/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="レンタル社長｜社長の頭だけ、貸します。">
+<meta property="og:description" content="判断が止まっている会社に、判断が回る構造をつくる。月額5万円〜、リモート、役割契約。">
+<meta property="og:url" content="https://rental-shacho.jp/">
+<meta property="og:site_name" content="レンタル社長">
+<meta name="twitter:card" content="summary">
+
+<!-- Google tag (gtag.js) — G-PY4F2QPE00 を差し替える -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PY4F2QPE00"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PY4F2QPE00');
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap">
+
+<style>
+:root{
+  --bg:#f4f1ea; --bg2:#ebe6db; --ink:#1d1b17; --ink2:#3a3730; --ink3:#4a463e;
+  --mute:#6b665c; --mute2:#a39c8c; --line:#d9d3c6; --line2:#c9c2b2; --line3:#d0c9ba;
+  --accent:#b8452c; --accent-dark:#8f3320; --white:#fff;
+  --serif:'Shippori Mincho B1',"Hiragino Mincho ProN","Yu Mincho",serif;
+  --sans:'Noto Sans JP',"Hiragino Sans","Yu Gothic",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:var(--accent)}a:hover{color:var(--accent-dark)}
+h1,h2,h3{font-family:var(--serif);font-weight:800;line-height:1.3;margin:0}
+p{margin:0}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:13px;font-weight:700;letter-spacing:.14em;color:var(--accent)}
+.eyebrow::before{content:"";display:inline-block;width:28px;height:2px;background:var(--accent)}
+.section{padding:88px 0}
+.section.alt{background:var(--bg2)}
+.section h2{font-size:40px;margin-top:12px}
+.btn{display:inline-flex;align-items:center;justify-content:center;height:56px;padding:0 32px;background:var(--accent);color:#fff;border:0;border-radius:4px;text-decoration:none;font-family:inherit;font-size:16px;font-weight:700;letter-spacing:.04em;cursor:pointer;transition:background .15s}
+.btn:hover{background:var(--accent-dark);color:#fff}
+.btn:disabled{opacity:.6;cursor:default}
+.btn.dark{background:var(--ink);height:40px;padding:0 20px;font-size:14px}
+.btn.dark:hover{background:#000}
+.mute{color:var(--mute);font-size:14px}
+
+/* nav */
+.nav{height:72px;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(244,241,234,.92);backdrop-filter:blur(6px);z-index:10}
+.nav .wrap{height:100%;display:flex;align-items:center;justify-content:space-between}
+.brand{display:flex;align-items:baseline;gap:12px;text-decoration:none;color:var(--ink)}
+.brand b{font-family:var(--serif);font-size:22px;font-weight:800;letter-spacing:.04em}
+.brand span{font-size:12px;color:var(--mute);letter-spacing:.08em}
+.nav ul{list-style:none;margin:0;padding:0;display:flex;align-items:center;gap:28px;font-size:14px;font-weight:500}
+.nav ul a{color:var(--ink);text-decoration:none}
+.nav ul a:not(.btn):hover{color:var(--accent)}
+.nav ul a.btn{color:#fff}
+.brand b{white-space:nowrap}
+
+/* hero */
+.hero{padding:96px 0 88px}
+.hero .wrap{display:flex;gap:64px;align-items:center;justify-content:space-between}
+.hero-text{display:flex;flex-direction:column;gap:28px;max-width:720px}
+.hero h1{font-size:72px;line-height:1.2;letter-spacing:.01em}
+.hero .sub{font-family:var(--serif);font-size:28px;font-weight:700;color:var(--ink3);letter-spacing:.02em}
+.hero .lead{font-size:17px;line-height:1.9;color:var(--ink2);max-width:620px}
+.hero .cta{display:flex;align-items:center;gap:20px;flex-wrap:wrap;padding-top:8px}
+.stamp{flex-shrink:0;width:300px;height:300px;transform:rotate(-8deg)}
+
+/* who */
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:44px}
+.card{padding:32px 28px;background:var(--bg);border-radius:6px;display:flex;flex-direction:column;gap:14px}
+.card .num{font-family:var(--serif);font-size:44px;font-weight:800;color:var(--line2);line-height:1}
+.card h3{font-size:20px;line-height:1.5;font-family:var(--sans);font-weight:700}
+.card p{font-size:15px;line-height:1.85;color:var(--ink3)}
+.symptoms{display:flex;gap:40px;align-items:flex-start;margin-top:44px;flex-wrap:wrap}
+.symptoms .label{flex-shrink:0;font-size:14px;font-weight:700;color:var(--mute);letter-spacing:.06em;padding-top:2px}
+.symptoms ul{list-style:none;margin:0;padding:0;display:flex;gap:32px;flex-wrap:wrap;font-size:16px;font-weight:500}
+.symptoms li::before{content:"■ ";color:var(--accent)}
+
+/* what */
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:44px}
+.panel{padding:36px 36px 40px;border-radius:6px;display:flex;flex-direction:column;gap:22px}
+.panel.dark{background:var(--ink);color:var(--bg)}
+.panel.light{background:var(--white);border:1px solid var(--line);color:var(--ink2)}
+.panel h3{font-size:26px;letter-spacing:.04em}
+.panel.light h3{color:var(--ink3)}
+.panel ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;font-size:16px}
+.panel li{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid #3a3730}
+.panel.light li{border-color:#e6e1d6}
+.panel li:first-child{padding-top:0}
+.panel li:last-child{border-bottom:0;padding-bottom:0}
+.panel li .mk{font-weight:700;color:var(--accent)}
+.panel.light li .mk{color:#9a9385}
+.note{margin-top:32px;font-size:15px;color:var(--mute)}
+
+/* plans */
+.plans-head{display:flex;align-items:flex-end;justify-content:space-between;gap:40px;flex-wrap:wrap}
+.plans-head p{font-size:14px;color:var(--mute);max-width:440px}
+.plans{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:44px;align-items:stretch}
+.plan{padding:36px 32px 40px;background:var(--bg);border-radius:6px;display:flex;flex-direction:column;gap:24px;position:relative;text-decoration:none;color:inherit}
+.plan.dark{background:var(--ink);color:var(--bg)}
+.plan .tag{font-size:13px;font-weight:700;letter-spacing:.1em;color:var(--mute)}
+.plan.dark .tag{color:var(--mute2)}
+.plan h3{font-size:28px;margin-top:10px}
+.plan .price{display:flex;align-items:baseline;gap:6px}
+.plan .price b{font-family:var(--serif);font-size:44px;font-weight:800;line-height:1}
+.plan .price span{font-size:18px;font-weight:700}
+.plan .price small{font-size:13px;color:var(--mute)}
+.plan.dark .price small{color:var(--mute2)}
+.plan .desc{font-size:15px;color:var(--ink2)}
+.plan.dark .desc{color:var(--line)}
+.plan ul{list-style:none;margin:0;padding:8px 0 0;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:10px;font-size:14px}
+.plan.dark ul{border-color:#3a3730}
+.plan li::before{content:"— ";color:var(--accent)}
+.plan .ref{font-size:13px;color:var(--mute)}
+.plan.dark .ref{color:var(--mute2)}
+.plan .badge{position:absolute;top:20px;right:20px;font-size:12px;font-weight:700;letter-spacing:.08em;padding:6px 12px;background:var(--accent);color:#fff;border-radius:3px}
+
+/* report */
+.report .wrap{display:flex;gap:64px;align-items:center}
+.report-text{flex:1;display:flex;flex-direction:column;gap:24px}
+.report-text p{font-size:16px;line-height:1.9;color:var(--ink2)}
+.report-text p.mute{font-size:15px}
+.sheet{flex-shrink:0;width:480px;padding:36px 40px 40px;background:var(--white);border:1px solid var(--line);border-radius:6px;display:flex;flex-direction:column;gap:22px;box-shadow:0 24px 48px rgba(29,27,23,.08)}
+.sheet .head{display:flex;justify-content:space-between;align-items:center;padding-bottom:16px;border-bottom:2px solid var(--ink)}
+.sheet .head b{font-family:var(--serif);font-size:20px;font-weight:800}
+.sheet .head span{font-size:12px;color:var(--mute);letter-spacing:.08em}
+.sheet dl{margin:0;display:flex;flex-direction:column;gap:22px}
+.sheet dt{font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--accent)}
+.sheet dd{margin:6px 0 0;font-size:15px;line-height:1.7}
+
+/* terms */
+.terms{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 48px;margin-top:40px;font-size:15px}
+.terms div{display:flex;gap:20px;padding:18px 0;border-bottom:1px solid var(--line3)}
+.terms b{flex-shrink:0;width:120px;color:var(--ink3)}
+
+/* who lends */
+.person .wrap{display:flex;gap:64px;align-items:flex-start}
+.person .head{flex-shrink:0;width:280px}
+.person .body{flex:1;display:flex;flex-direction:column;gap:20px}
+.person .name{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap}
+.person .name b{font-family:var(--serif);font-size:28px;font-weight:800}
+.person .name span{font-size:14px;color:var(--mute)}
+.person .body p{font-size:16px;line-height:1.9;color:var(--ink2)}
+.person .body p.mute{font-size:14px}
+
+/* contact */
+.contact{background:var(--ink);color:var(--bg);padding:96px 0}
+.contact .wrap{display:flex;gap:64px;align-items:flex-start}
+.contact-text{flex:1;display:flex;flex-direction:column;gap:24px;padding-top:12px}
+.contact-text h2{font-size:44px}
+.contact-text p{font-size:16px;line-height:1.9;color:var(--line);max-width:480px}
+.contact-text .fine{display:flex;flex-direction:column;gap:10px;font-size:14px;color:var(--mute2);padding-top:8px}
+form{flex-shrink:0;width:560px;padding:40px;background:var(--bg);color:var(--ink);border-radius:6px;display:flex;flex-direction:column;gap:22px}
+.row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.field{display:flex;flex-direction:column;gap:8px}
+label{font-size:13px;font-weight:700;color:var(--ink3)}
+input,select,textarea{width:100%;padding:0 14px;border:1px solid var(--line2);border-radius:4px;background:var(--white);font-family:inherit;font-size:16px;color:var(--ink)}
+input,select{height:48px}
+textarea{padding:12px 14px;line-height:1.7;resize:vertical;min-height:140px}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);outline-offset:1px;border-color:var(--accent)}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.thanks{font-family:var(--serif);font-size:22px;font-weight:700;line-height:1.6;padding:24px 0}
+.err{font-size:14px;color:var(--accent);display:none}
+
+/* footer */
+footer{padding:32px 0;font-size:12px;color:var(--mute)}
+footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+footer .privacy{font-size:12px;line-height:1.8;color:var(--mute);max-width:720px;margin-bottom:16px}
+
+@media (max-width:960px){
+  .hero h1{font-size:56px}
+  .stamp{width:220px;height:220px}
+  .cards,.plans{grid-template-columns:1fr}
+  .report .wrap,.contact .wrap,.person .wrap{flex-direction:column;align-items:stretch}
+  .sheet,form{width:100%}
+  .person .head{width:auto}
+}
+@media (max-width:720px){
+  .section{padding:64px 0}
+  .section h2{font-size:30px}
+  .hero{padding:56px 0}
+  .hero .wrap{flex-direction:column;align-items:flex-start;gap:40px}
+  .hero h1{font-size:40px}
+  .hero .sub{font-size:20px}
+  .stamp{width:160px;height:160px;align-self:flex-end;margin-top:-24px}
+  .nav ul li:not(:last-child){display:none}
+  .brand span{display:none}
+  .two,.terms,.row{grid-template-columns:1fr}
+  .terms b{width:96px}
+  form{padding:24px}
+  .contact{padding:64px 0}
+  .contact-text h2{font-size:32px}
+  .symptoms ul{flex-direction:column;gap:8px}
+}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="#top"><b>レンタル社長</b><span>by Comfortable Noise</span></a>
+    <ul>
+      <li><a href="#plans">プラン</a></li>
+      <li><a href="#report">判断レポート</a></li>
+      <li><a href="#terms">契約のこと</a></li>
+      <li><a class="btn dark" href="#contact" data-cta="nav">相談する</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero" data-section="hero">
+  <div class="wrap">
+    <div class="hero-text">
+      <span class="eyebrow">月額制・役割契約・リモート</span>
+      <h1>社長の頭だけ、<br>貸します。</h1>
+      <p class="sub">名義は貸しません。</p>
+      <p class="lead">その会社にいない「社長役の頭」を、月額で外付けするサービスです。貸すのは判断と視点。登記も肩書も名刺も、貸しません。判断が止まっている会社に、判断が回る構造をつくります。</p>
+      <div class="cta">
+        <a class="btn" href="#contact" data-cta="hero">まず30分、話を聞く</a>
+        <span class="mute">月額 50,000円〜（税別）・最低3か月</span>
+      </div>
+    </div>
+    <svg class="stamp" viewBox="0 0 300 300" role="img" aria-label="社長の印">
+      <circle cx="150" cy="150" r="138" fill="none" stroke="#b8452c" stroke-width="10"/>
+      <circle cx="150" cy="150" r="118" fill="none" stroke="#b8452c" stroke-width="3"/>
+      <text x="150" y="126" text-anchor="middle" font-family="'Shippori Mincho B1',serif" font-size="92" font-weight="800" fill="#b8452c">社長</text>
+      <text x="150" y="212" text-anchor="middle" font-family="'Noto Sans JP',sans-serif" font-size="26" font-weight="700" letter-spacing="6" fill="#b8452c">RENTAL</text>
+    </svg>
+  </div>
+</section>
+
+<section class="section alt" data-section="who">
+  <div class="wrap">
+    <span class="eyebrow">WHO</span>
+    <h2>「社長がいない時間」を抱えている会社へ</h2>
+    <div class="cards">
+      <div class="card"><span class="num">01</span><h3>社長が現場に埋没している</h3><p>経営判断が止まり、社長が一番忙しい作業者になっている。判断する時間そのものがない。</p></div>
+      <div class="card"><span class="num">02</span><h3>二代目・後継者がいる</h3><p>後継者がまだ「社長の思考」をしていない。前社長には聞きづらく、社内に相談相手もいない。</p></div>
+      <div class="card"><span class="num">03</span><h3>一人法人・数人の会社</h3><p>壁打ち相手がいない。相談先が税理士か家族しかなく、経営の話を経営の言葉でできる相手がいない。</p></div>
+    </div>
+    <div class="symptoms">
+      <span class="label">共通する症状</span>
+      <ul>
+        <li>判断が先送りになる</li>
+        <li>判断の基準が言語化されていない</li>
+        <li>「誰に聞けばいいか」で先に詰まる</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="section" data-section="what">
+  <div class="wrap">
+    <span class="eyebrow">WHAT</span>
+    <h2>貸すもの、貸さないもの</h2>
+    <div class="two">
+      <div class="panel dark">
+        <h3>貸すもの</h3>
+        <ul>
+          <li><span class="mk">○</span><span><strong>判断</strong> — Yes／No と、その理由</span></li>
+          <li><span class="mk">○</span><span><strong>視点</strong> — 人ではなく、構造で見る</span></li>
+          <li><span class="mk">○</span><span><strong>問いの立て直し</strong> — 何を決めるべきかの整理</span></li>
+          <li><span class="mk">○</span><span><strong>判断基準の言語化</strong> — 次は自分で決められるように</span></li>
+          <li><span class="mk">○</span><span><strong>枝を切る役</strong> — 経営会議の場で、選択肢を減らす</span></li>
+        </ul>
+      </div>
+      <div class="panel light">
+        <h3>貸さないもの</h3>
+        <ul>
+          <li><span class="mk">×</span><span>代表権・登記・役員就任</span></li>
+          <li><span class="mk">×</span><span>肩書・名刺・「社長」としての対外同席</span></li>
+          <li><span class="mk">×</span><span>実務作業・成果物の制作</span></li>
+          <li><span class="mk">×</span><span>判断の結果責任・保証</span></li>
+          <li><span class="mk">×</span><span>契約時間の消化 — 時間ではなく、役割で契約します</span></li>
+        </ul>
+      </div>
+    </div>
+    <p class="note">成果物の制作や実務が必要になった場合は、別契約（構造設計コンサルティング）でお受けします。</p>
+  </div>
+</section>
+
+<section class="section alt" id="plans" data-section="plans">
+  <div class="wrap">
+    <div class="plans-head">
+      <div><span class="eyebrow">PLANS</span><h2>プラン</h2></div>
+      <p>すべて月額・税別。<br>「月○時間」は契約に書きません。役割と、応答の形で契約します。</p>
+    </div>
+    <div class="plans">
+      <a class="plan" href="#contact" data-plan="async">
+        <div><span class="tag">ASYNC</span><h3>非同期の社長</h3></div>
+        <div class="price"><b>5</b><span>万円</span><small>／月・税別</small></div>
+        <p class="desc">テキストで判断を返します。定例は持ちません。判断の型を見るための入口。</p>
+        <ul><li>週1回、まとめて返答</li><li>判断依頼の件数制限なし</li><li>判断レポートを都度作成</li></ul>
+        <p class="ref">目安：税理士の顧問料と同じくらい</p>
+      </a>
+      <a class="plan dark" href="#contact" data-plan="attend">
+        <span class="badge">おすすめ</span>
+        <div><span class="tag">ATTEND</span><h3>同席する社長</h3></div>
+        <div class="price"><b>20</b><span>万円</span><small>／月・税別</small></div>
+        <p class="desc">月1〜2回、経営会議に同席し、その場で判断の枝を切ります。非同期の判断も含みます。</p>
+        <ul><li>月1〜2回の経営会議に同席（リモート）</li><li>週1回の非同期返答</li><li>議事 ＋ 判断レポート</li></ul>
+        <p class="ref">目安：非常勤役員ひとり分</p>
+      </a>
+      <a class="plan" href="#contact" data-plan="righthand">
+        <div><span class="tag">RIGHT HAND</span><h3>右腕の社長</h3></div>
+        <div class="price"><b>50</b><span>万円</span><small>／月・税別</small></div>
+        <p class="desc">週1で同席し、経営会議そのものを設計します。実質、社長の右腕を務めます。</p>
+        <ul><li>週1回の同席（リモート）</li><li>経営会議の設計・運営</li><li>随時の返答、議事 ＋ 判断レポート</li></ul>
+        <p class="ref">目安：右腕を雇うより安い（1社限定）</p>
+      </a>
+    </div>
+    <p class="note">現地訪問は別途。同席はすべてリモートで行います。</p>
+  </div>
+</section>
+
+<section class="section report" id="report" data-section="report">
+  <div class="wrap">
+    <div class="report-text">
+      <div><span class="eyebrow">DELIVERABLE</span><h2>判断は、消費させません。<br>残します。</h2></div>
+      <p>返した判断は、1件1枚の「判断レポート」として時系列で積みます。あのとき何を根拠に決めたかが、あとから見返せる。積み上がったレポートは、そのまま「この会社の判断基準」になります。契約が終わっても、手元に残る成果物です。</p>
+      <p class="mute">同席した会議の議事は、決まったことと決めなかったことだけを書きます。情報を均等に並べた議事録は、読まれないので作りません。</p>
+    </div>
+    <div class="sheet" aria-label="判断レポートの構成">
+      <div class="head"><b>判断レポート</b><span>No. 014</span></div>
+      <dl>
+        <div><dt>問い</dt><dd>何を決めるのか。誰が持ち込んだ問いか。</dd></div>
+        <div><dt>判断</dt><dd>Yes ／ No ／ 保留 のいずれか。</dd></div>
+        <div><dt>理由</dt><dd>なぜそう判断したか。構造で説明する。</dd></div>
+        <div><dt>前提にした事実</dt><dd>この判断が依存している事実。変われば判断も変わる。</dd></div>
+        <div><dt>次に判断が要るポイント</dt><dd>この判断の先で、次に何を決めることになるか。</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="terms" data-section="terms">
+  <div class="wrap">
+    <span class="eyebrow">TERMS</span>
+    <h2>契約のこと</h2>
+    <div class="terms">
+      <div><b>契約形態</b><span>準委任契約・月額・役割契約。時間は契約に書きません</span></div>
+      <div><b>最低期間</b><span>3か月。判断の癖が見えるまでの期間です</span></div>
+      <div><b>解約</b><span>1か月前の通知で解約できます</span></div>
+      <div><b>同席</b><span>リモート前提。現地訪問は追加料金</span></div>
+      <div><b>同業</b><span>同業の会社は同時にお受けしません。判断の中立性と秘密保持のためです</span></div>
+      <div><b>責任</b><span>判断の結果責任は貴社が負います。「社長」は呼称であり、会社法上の役員・代表者ではありません</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="section person" data-section="person">
+  <div class="wrap">
+    <div class="head"><span class="eyebrow">WHO LENDS</span><h2>貸すのは、<br>この人です</h2></div>
+    <div class="body">
+      <div class="name"><b>長野 俊和</b><span>株式会社コンフォータブルノイズ 代表取締役</span></div>
+      <p>エンジニアとして約20年、PM／PMOとして約7年。複数の会社に同時に入り、それぞれの経営判断のそばで仕事をしてきました。自分の会社も、一人で経営しています。</p>
+      <p>仕事の流儀は「人ではなく、構造を直す」。判断が止まる原因を、その人の能力ではなく、判断が回らない構造に求めます。だから、貸すのは頭だけで足ります。</p>
+      <p class="mute">構造設計コンサルティング：<a href="https://comf-structure.jp/" target="_blank" rel="noopener">comf-structure.jp</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact" data-section="contact">
+  <div class="wrap">
+    <div class="contact-text">
+      <span class="eyebrow">CONTACT</span>
+      <h2>まず、いまの判断を<br>ひとつ。</h2>
+      <p>初回30分、いま止まっている判断をひとつ持ってきてください。その場で判断を返します。それを見て、続けるかどうかを決めてもらえれば十分です。</p>
+      <div class="fine">
+        <span>相談は無料。しつこい営業はしません。</span>
+        <span>いただいた内容は、相談の準備以外に使いません。</span>
+      </div>
+    </div>
+    <!-- action に GAS のウェブアプリURLを入れる -->
+    <form id="contact-form" action="https://script.google.com/macros/s/AKfycbyL_GImyNsDXM1P-TNevOzjOusQB5g-UYOv0wXWrOuN9fXmAn2w5RBccQhC-wyRGO7p/exec" method="post" novalidate>
+      <div class="row">
+        <div class="field"><label for="f-name">お名前</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
+        <div class="field"><label for="f-company">会社名</label><input id="f-company" name="company" type="text" autocomplete="organization"></div>
+      </div>
+      <div class="field"><label for="f-email">メールアドレス</label><input id="f-email" name="email" type="email" autocomplete="email" required></div>
+      <div class="field">
+        <label for="f-plan">気になっているプラン</label>
+        <select id="f-plan" name="plan">
+          <option value="">まだ決めていない</option>
+          <option value="async">非同期の社長（5万円）</option>
+          <option value="attend">同席する社長（20万円）</option>
+          <option value="righthand">右腕の社長（50万円）</option>
+        </select>
+      </div>
+      <div class="field"><label for="f-issue">いま止まっている判断を、ひとつ</label><textarea id="f-issue" name="issue" rows="5" placeholder="例：営業を1人採用するかどうか、半年迷っている"></textarea></div>
+      <div class="hp" aria-hidden="true"><label for="f-website">Website</label><input id="f-website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+      <p class="err" id="form-err">送信に失敗しました。時間をおいて再度お試しください。</p>
+      <button class="btn" type="submit" data-cta="contact">30分の相談を申し込む</button>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="privacy">個人情報の取り扱い：フォームでいただいた情報は、相談の準備とご連絡のためにのみ使用し、第三者に提供しません。本サイトはアクセス解析のため Google アナリティクスを使用しています。</p>
+  </div>
+  <div class="wrap">
+    <span>© 株式会社コンフォータブルノイズ</span>
+    <span>東京都新宿区西新宿</span>
+  </div>
+</footer>
+
+<script>
+(function () {
+  function track(name, params) {
+    if (typeof gtag === 'function') gtag('event', name, params || {});
+  }
+
+  // CTA
+  document.querySelectorAll('[data-cta]').forEach(function (el) {
+    el.addEventListener('click', function () { track('cta_click', { location: el.dataset.cta }); });
+  });
+
+  // プランカード
+  document.querySelectorAll('[data-plan]').forEach(function (el) {
+    el.addEventListener('click', function () {
+      track('plan_click', { plan: el.dataset.plan });
+      var sel = document.getElementById('f-plan');
+      if (sel) sel.value = el.dataset.plan;
+    });
+  });
+
+  // セクション表示（50%以上、1回だけ）
+  if ('IntersectionObserver' in window) {
+    var seen = {};
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        var id = e.target.dataset.section;
+        if (e.isIntersecting && !seen[id]) { seen[id] = true; track('section_view', { section: id }); }
+      });
+    }, { threshold: 0.5 });
+    document.querySelectorAll('[data-section]').forEach(function (el) { io.observe(el); });
+  }
+
+  // フォーム
+  var form = document.getElementById('contact-form');
+  var errBox = document.getElementById('form-err');
+  var started = false;
+  form.addEventListener('focusin', function () {
+    if (started) return;
+    started = true;
+    track('form_start');
+  });
+
+  form.addEventListener('submit', function (ev) {
+    ev.preventDefault();
+    errBox.style.display = 'none';
+
+    var email = form.elements.email.value.trim();
+    if (!form.elements.name.value.trim() || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      errBox.textContent = 'お名前とメールアドレスをご確認ください。';
+      errBox.style.display = 'block';
+      return;
+    }
+
+    var btn = form.querySelector('button[type=submit]');
+    btn.disabled = true;
+    btn.textContent = '送信中…';
+
+    var data = new FormData(form);
+    data.append('referrer', document.referrer || '');
+    data.append('ua', navigator.userAgent || '');
+    var plan = data.get('plan') || 'undecided';
+
+    // GAS 宛て：headers を付けない（プリフライトを避ける）
+    fetch(form.action, { method: 'POST', body: data })
+      .then(function (res) { return res.json(); })
+      .then(function (json) {
+        if (!json || !json.ok) throw new Error((json && json.error) || 'unknown');
+        track('generate_lead', { plan: plan });
+        form.innerHTML = '<p class="thanks">受け付けました。<br>折り返しご連絡します。</p>';
+      })
+      .catch(function (err) {
+        track('form_error', { reason: String(err && err.message || err) });
+        btn.disabled = false;
+        btn.textContent = '30分の相談を申し込む';
+        errBox.textContent = '送信に失敗しました。時間をおいて再度お試しください。';
+        errBox.style.display = 'block';
+      });
+  });
+})();
+</script>
+</body>
+</html>
