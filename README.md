@@ -14,7 +14,7 @@
 
 ### 1. GAS を先に動かす
 1. 新しいスプレッドシートを作る → 拡張機能 → Apps Script → `Code.gs` を貼る
-2. プロジェクトの設定 → スクリプト プロパティ に `NOTIFY_TO`、`SLACK_WEBHOOK_URL` を登録
+2. プロジェクトの設定 → スクリプト プロパティ に `NOTIFY_TO`、`SLACK_WEBHOOK_URL` を登録。Apps Script をシートから開かず単体で作った場合は `SPREADSHEET_ID`（シートURLの `/d/` と `/edit` の間）も必須
 3. エディタから `testNotify()` を実行 → シート・メール・Slack の3経路が通ることを確認
 4. デプロイ → 新しいデプロイ → ウェブアプリ → 実行ユーザー「自分」／アクセス「全員」 → URL をメモ
 
@@ -59,3 +59,9 @@ DNS が通ると GitHub 側で「DNS check successful」になり、少し待つ
 ## 更新のしかた
 `index.html` を直して push するだけ。1〜2分で反映。
 GAS を直したときは「デプロイを管理 → 編集 → 新バージョン」（新しいデプロイにしない。URLが変わる）。
+
+## フォームが「送信に失敗しました」になるとき
+- GAS が `{"ok":false,"error":"server_error"}` を返している＝シート追記で落ちている。Apps Script の「実行数」で `doPost` のエラー内容を見る
+- 単体プロジェクトで作っていて `SPREADSHEET_ID` 未設定 → スクリプト プロパティに追加して新バージョンで再デプロイ
+- `testNotify()` を一度も実行していない → 実行して権限を承認してから再デプロイ
+- 生存確認：ブラウザで GAS の exec URL を開くと `{"ok":true,"service":"rental-shacho-form"}` が出る
